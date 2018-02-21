@@ -1,0 +1,160 @@
+body, html {
+  height: 100%;
+}
+
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+
+.landing_image {
+  background-color:black;
+  background-image: url(./robotsdarker.jpg);
+  height: 100%;
+  padding: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing_text {
+  color: white;
+}
+
+
+.landing_button {
+  color: black;
+  font-size: 1.5em;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.landing_button:hover {
+  transform: scale(1.1);
+}
+
+.other_buttons {
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.other_buttons:hover {
+  transform: scale(1.1);
+}
+
+
+.photo_with_results {
+  display: flex;
+}
+
+.with_AI_button {
+  display: flex;
+}
+
+.AIButtonplacement {
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+.AIButtonplacement button {
+  margin: auto;
+}
+
+
+.main_image {
+  width: 600px;
+}
+
+.side_image {
+  animation: moveleft 3s forwards;
+}
+
+@keyframes moveleft {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+      transform: translateX(-50vh);
+  
+  }
+}
+
+
+
+.card_deck {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      width: 180px;
+      margin: 10px;
+      margin-top: 40px;
+      z-index: 1;
+      animation: dropin 3s;
+  }
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+}  
+
+.card img {
+  width: 90px;
+}
+
+.card ul {
+  margin: 20px;
+}
+
+.card li {
+  text-align: left;
+}
+
+@keyframes dropin {
+  0% {
+      transform: scale(0.99);
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: rgb(49, 49, 49);
+  height: 65px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: left;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
